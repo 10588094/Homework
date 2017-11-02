@@ -14,7 +14,7 @@ BACKUP_HTML = 'tvseries.html'
 OUTPUT_CSV = 'tvseries.csv'
 
 def extract_tvseries(dom):
-	'''Extract a list of highest rated TV series from DOM (of IMDB page).'''
+'''Extract a list of highest rated TV series from DOM (of IMDB page).'''
 	
 	tvseries = []
 	
@@ -40,7 +40,7 @@ def extract_tvseries(dom):
 		runtime = runtime.encode('utf-8').rstrip('min')
 		
 		# Find actors, itterate over actors for each movie, add them to a string
-        # and remove 'u'
+		# and remove 'u'
 		i = 0
 		temp = ""
 		for i in range(4):
@@ -61,7 +61,7 @@ def extract_tvseries(dom):
 	return [tvseries]
 
 def save_csv(f, tvseries):
-	'''Output a CSV file containing highest rated TV-series.'''
+'''Output a CSV file containing highest rated TV-series.'''
 	
 	# Write collumn headers in the csv file
 	writer = csv.writer(f)
