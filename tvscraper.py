@@ -14,23 +14,23 @@ BACKUP_HTML = 'tvseries.html'
 OUTPUT_CSV = 'tvseries.csv'
 
 def extract_tvseries(dom):
-'''Extract a list of highest rated TV series from DOM (of IMDB page).'''
-	
+	'''Extract a list of highest rated TV series from DOM (of IMDB page).'''
+
 	tvseries = []
-	
+
 	# Itteratie over items in DOM class for movie info (Rianne Schoon gave me
 	# some tips here for genre and ratings)
 	for tvserie in dom.by_class('lister-item-content'): 
-	
+
 		# Find titles in DOM and remove the 'u'
 		title = tvserie.by_class('lister-item-header')[0].by_tag('a')[0].content
 		title = title.encode('utf-8')
-		
+
 		# Find ratings in DOM and remove the 'u'
 		rating = tvserie.by_class('ratings-bar')[0].by_class('inline-block.'
 				 'ratings-imdb-rating')[0].by_tag('strong')[0].content
 		rating = rating.encode('utf-8')
-		
+
 		# Find genre in DOM, remove the 'u', '\n' and spaces
 		genre = tvserie.by_class('text-muted ')[0].by_class('genre')[0].content
 		genre = genre.strip('\n').rstrip(' ').encode('utf-8')
@@ -61,15 +61,15 @@ def extract_tvseries(dom):
 	return [tvseries]
 
 def save_csv(f, tvseries):
-'''Output a CSV file containing highest rated TV-series.'''
+	'''Output a CSV file containing highest rated TV-series.'''
 	
 	# Write collumn headers in the csv file
 	writer = csv.writer(f)
 	writer.writerow(['Title', 'Rating', 'Genre', 'Actors', 'Runtime'])
 	
-	# Write list with tv-series to csv file
+    # Write list with tv-series to csv file
 	for line in tvseries:
-		writer.writerows(line)
+        writer.writerows(line)
 
 if __name__ == '__main__':
     # Download the HTML file
