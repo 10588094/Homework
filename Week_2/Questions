@@ -1,1 +1,7 @@
 
+1. Explain the difference between the == operator and the === operator.
+=== kijkt of waarden precies identiek zijn. Bij == worden automatisch typen geconverteerd
+
+2. Explain what a closure is. (Note that JavaScript programs use closures very often.)
+3. Explain what higher order functions are.
+4. Explain what a query selector is and give an example line of JavaScript that uses a query selector.
