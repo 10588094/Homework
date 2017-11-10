@@ -1,7 +1,8 @@
 /**
 Naam: Daphne Witmer
 Studentnummer: 10588094
-Code:
+Code to create a linegraph of the average temperature in De Bilt weather station
+http://localhost:63342/Week_2/index.html?_ijt=afmjf7kfatduhvicc8fahaqero
 **/
 
 temps = []
