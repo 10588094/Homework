@@ -1,6 +1,6 @@
 1. How can D3 access and change the DOM? What do select and selectAll do?
 2. What are the d and i in function(d){} and function(d, i){}?
-    d representeerd het huidige element uit de data set waar we naar kijken.
+    d is de data, i is de index
 
 3. Write sample lines of JavaScript to add a div element with class “barChart1” and to add an svg element with class “barChart2” with square dimensions.
 4. Describe append, update, enter, and exit at a high level. What does “selectAll + data + enter + append” refer to?

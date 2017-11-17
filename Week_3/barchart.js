@@ -65,10 +65,20 @@ d3.json("KNMI_2015.json", function(error, data) {
         .attr("y", function(d) { return y(d.rainfall); })
         .attr("height", function(d) { return height - y(d.rainfall); })
         .attr("width", x.rangeBand())
+
+        // Change color of bars and show text when hovering over
         .on("mouseover",function(d, i) {
             d3.select(this).attr("r", 10).style("fill", "steelblue")
+            chart.append("text")
+                .attr("class", "toDelete")
+                .attr("x", x(d.date) + (x.rangeBand()/2))
+                .attr("y", y(d.rainfall - 2))
+                .style("text-anchor", "middle")
+                .text(d.rainfall)
             })
         .on("mouseout", function(d){
             d3.select(this).attr("r", 5.5).style("fill", "darkblue")
+            d3.selectAll(".toDelete")
+                .style("visibility", "hidden")
             })
 });
