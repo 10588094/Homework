@@ -1,0 +1,32 @@
+.chart rect {
+  fill: darkblue;
+}
+
+.chart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.axis text {
+  font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+a:link {
+    font: 12px sans-serif;
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+}
+
+
