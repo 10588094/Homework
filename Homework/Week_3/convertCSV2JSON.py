@@ -23,6 +23,7 @@ with open('KNMI_2015.csv', 'r') as infile:
     # Write data to an JSON file
     with open('KNMI_2015.json', 'w') as outfile:
         json.dump(data, outfile)
+		
 
 
 

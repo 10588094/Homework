@@ -23,6 +23,10 @@ h2 {
     font: 24px sans-serif;
 }
 
+p {
+    margin-bottom: 2cm;
+}
+
 a:link {
     font: 12px sans-serif;
     color: blue;
@@ -32,5 +36,3 @@ a:hover {
     color: red;
     background-color: transparent;
 }
-
-

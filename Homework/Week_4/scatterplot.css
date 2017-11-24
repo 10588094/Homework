@@ -1,0 +1,28 @@
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+h2 {
+    font: 24px sans-serif;
+}
+
+a:link {
+    font: 12px sans-serif;
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+}
