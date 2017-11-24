@@ -1,0 +1,17 @@
+Daphne Witmer
+10588094
+Uitleg desing keuzes bij scatterplot
+
+Ik heb gezoken om in de legenda de continenten weer te geven zodat de grafiek
+ook een beeld geeft van waar continenten liggen als het gaat om levensverwachting/vervuiling.
+Zo is bijvoorbeeld duidelijk te zien dat het continent Afrika de laagste levensverwachting heeft,
+terwijl het oosterlijk middelandsezeegebied hoog scoort op vervuiling.
+Voor de kleuren heb ik category10 gekozen omdat deze het duidelijkst van elkaar te onderschijden zijn.
+
+De scatterdots zijn geschaald op popullatie groote van het land, dit is handig om de scores in context te kunnen zetten.
+Zo is de populatie van landen als Inda en China heel hoog wat een grotere waarde voor vervuiling deels verklaard.
+De landen zijn met een sqrt() functie geschaald zodat de bollen van India en China niet te groot worden en kleinere landen nog zichtbaar zijn.
+
+De plot is interactief zodat bij het bewegen van de muis over de dots er informatie
+verschijnt met welk land de dot representeerd en wat de waarden voor vervuiling en levensverwachting zijn.
+De informatie verschijnt linksboven omdat hier geen dots staan en er genoeg ruimte is om alles duidelijk weer te geven.
