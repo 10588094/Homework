@@ -38,3 +38,11 @@ a:hover {
     background: yellow;
     box-shadow: 2px 2px 1px #888;
 }
+
+.dropbtn {
+    float: left
+}
+
+.dropdown-content {
+    float: left
+}
