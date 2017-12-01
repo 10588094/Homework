@@ -1,0 +1,26 @@
+<!-- Daphne Witmer, 10588094 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lineGraph</title>
+    <link rel="stylesheet" type="text/css" href="lineGraph.css">
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src="lineGraph.js"></script>
+</head>
+<body>
+    <div class="graph">
+        <h2>Temperature 2016</h2>
+        <button onclick="showMenu();" class="dropbtn">Wheater Station</button>
+			<div id="dropdown" class="dropdown-content" style="display:none">
+				<div><a class="m" value="Leeuwarden" href="#">Leeuwarden</a></div>
+				<div><a class="m" value="Maastricht" href="#">Maastricht</a></div>
+			</div>
+    </div>
+        <p></p>
+        <p>Made by Daphne Witmer</p>
+        <p><a href="http://projects.knmi.nl/klimatologie/daggegevens/selectie.cgi">Source: KNMI, De Bilt Weather Sation</a></p>
+    </div>
+</body>
+</html>
