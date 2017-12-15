@@ -4,29 +4,58 @@
 <html>
 <head>
     <title>linkedViews</title>
-    <link rel="stylesheet" type="text/css" href="map.css">
+    <link rel="stylesheet" type="text/css" href="linkedViews.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
     <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <script src="//d3js.org/topojson.v1.min.js"></script>
     <script src="https://d3js.org/d3-queue.v3.min.js"></script>
-    <script src="map.js"></script>
+    <script src="linkedViews.js"></script>
 </head>
+
 <body>
+
     <div class="page">
         <div class="map">
-            <h2>Happy Planet Index </h2>
+            <h2>&emsp;Happy Planet Index</h2>
         </div>
         <div class="plot">
             <h2>&emsp;</h2>
-            <h2><button type="button" class="btn btn-danger" onclick="uploadData()">HPI index</button> <button type="button" class="btn btn-danger" onclick="uploadData2()">Inequallity</button></h2>
+            <h2>
+                <button type="button" class="btn btn-danger" onclick="uploadData('Wellbeing')">Wellbeing</button>
+                <button type="button" class="btn btn-danger" onclick="uploadData('Inequality')">Inequality</button>
+            </h2>
         </div>
     </div>
-    <div class="info">
-        <p></p>
-        <p>Made by Daphne Witmer</p>
-        <p><a href="http://happyplanetindex.org/">Source: happyplanetindex</a></p>
+
+    <div class="inequalInfo" style="diplay: inline">* The inequalities between people within a country,
+        in terms of how long they live, and how happy they feel, based on the
+        distribution in each country's life expectancy and wellbeing data.
+        Inequality of outcomes is expressed as a percentage.
+    </div>
+    <div class="wellbeingInfo" style="display: none">* How satisfied the residents of each country say
+        they feel with life overall, on a scale from zero to ten, based on data
+        collected as part of the Gallup World Poll.
+    </div>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">HPI index</div>
+          <div class="panel-body">This visualization shows which countries are happiest according to HPI data.
+          The Happiness Index (visualized in the map) is measured  with several variables:
+          Wellbeing, lifeExpectancy, Inequality of Outcomes and Ecological footprint.
+          The map shows the world coloured on HPI index (happy=yellow, less happy=red).
+          When hovering over the map the HPIrank is shown and the corresponding dot will light
+          up in the scatterplot.
+          This makes it easy to compare lifeExpectancy and wellbeing or inequality with the HPI
+          score.
+          To read more on how the HPI is calculated visit: http://happyplanetindex.org/
+        </div>
+    </div>
+
+    <div>
+        <p><a href="http://happyplanetindex.org/">&emsp;Source: happyplanetindex</a></p>
+        <p>&emsp;Made by Daphne Witmer</p>
     </div>
 </body>
 </html>

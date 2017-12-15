@@ -1,0 +1,6 @@
+Omdat de data over geluk gaat heb ik gekozen voor warme, vrolijke kleuren.
+De minder gelukkige landen zijn rood gekleurd omdat rood geassocieerd wordt met
+agreessie en negatieve emoties. De gelukkigere landen zijn geel gekleurd, omdat geel
+een possitieve associatie opwekt.
+Ik heb de kaart en de plot naast elkaar gezet zodat het overzichtelijk is en meteen
+duidelijk wordt welke dot bij welk land hoort. 
